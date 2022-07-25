@@ -1,0 +1,151 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 64px 0 0 0;
+}
+
+#content {
+    padding: 20px 0 0 0;
+    width: 80vw;
+}
+
+#title {
+    font-size: 5vmin;
+    text-align: left;
+}
+
+#flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+#shippingForm {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 0 0;
+}
+
+.label{
+    font-size: 2.5vmin;
+}
+
+#input2,
+.input {
+    height: 3vmin;
+    width: 100%;
+    border: 1px solid rgb(114, 123, 131);
+    border-radius: 5px;
+    margin: 10px 0 20px 0;
+    padding: 0 20px 0 20px;
+}
+
+#input2 {
+    margin: 10px 0 0 0;
+}
+
+#submit {
+    color: white;
+    border-radius: 5px;
+    height: 4vmin;
+    width: 13vmin;
+}
+
+#summary {
+    height: fit-content;
+    width: 35vw;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 10px;
+}
+
+#subtitle {
+    font-size: 3vmin;
+    padding: 1vmin;
+}
+
+.itemSummary {
+    height: 3vmin;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    border: 1px dotted rgb(214, 214, 214);
+    border-style: none none dotted none;
+}
+
+#total {
+    width: 100%;
+    height: 3vmin;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 20px;
+}
+
+@media only screen and (max-width: 1079px) {
+    #title {
+        font-size: 8vmin;
+        text-align: center;
+    }
+    #flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    #shippingForm {
+        width: 80vw;
+    }   
+    .label {
+        font-size: 6vmin;
+    }
+    #input2,
+    .input {
+        height: 6vmin;
+    }
+    #submit {
+        height: 10vmin;
+        width: 35vmin;
+    }
+    #summary {
+        margin: 20px 0 0 0;
+        width: 80vw;
+    }
+    #subtitle {
+        margin: 3vmin;
+        font-size: 6vmin;
+    }
+    .itemSummary {
+        height: 10vmin;
+    }
+    #total {
+        height: 10vmin;
+    }
+}
+
+@media only screen and (min-width: 1930px) {
+    #main {padding: 5vmin;}
+    #input2,
+    .input {
+        height: 4vmin;
+        font-size: 2vmin;
+    }
+    #submit {
+        margin-top: 2vmin;
+        font-size: 2vmin;
+    }
+    .itemSummary {
+        height: 5vmin;
+        font-size: 2vmin;
+    }
+    #total {
+        height: 5vmin;
+        font-size: 2vmin;
+    }
+}

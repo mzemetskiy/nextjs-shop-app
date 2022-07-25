@@ -1,0 +1,33 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 64px 10px 0 10px;
+}
+
+#title {
+    font-size: 6vmin;
+    margin: 20px;
+    color: rgb(56, 56, 56);
+}
+
+#info {
+    font-size: 3vmin;
+    color: rgb(107, 107, 107);
+}
+
+@media only screen and (max-width: 1079px) {
+    #title {
+        font-size: 10vmin;
+    }
+    #info {
+        font-size: 5vmin;
+    }
+}
+
+@media only screen and (min-width: 1930px) {
+    #container {
+        padding: 124px 20px 0 20px;
+    }
+}
